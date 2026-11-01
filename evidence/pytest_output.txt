@@ -1,0 +1,43 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.17, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Jonas\OneDrive\Documents\Universidad\Ingenieria de soluciones con IA\agente-solicitudes-academicas\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Jonas\OneDrive\Documents\Universidad\Ingenieria de soluciones con IA\agente-solicitudes-academicas
+plugins: anyio-4.16.0, langsmith-0.14.16
+collecting ... collected 28 items
+
+tests/test_e2e.py::test_caso_estandar_se_aprueba PASSED                  [  3%]
+tests/test_e2e.py::test_fuera_de_plazo_se_deriva_a_coordinacion PASSED   [  7%]
+tests/test_e2e.py::test_evaluacion_se_deriva_al_docente PASSED           [ 10%]
+tests/test_e2e.py::test_sin_respaldo_pide_informacion PASSED             [ 14%]
+tests/test_e2e.py::test_tramite_fuera_de_alcance PASSED                  [ 17%]
+tests/test_e2e.py::test_memoria_cambia_la_decision PASSED                [ 21%]
+tests/test_e2e.py::test_no_procesa_dos_veces PASSED                      [ 25%]
+tests/test_e2e.py::test_solicitud_inexistente PASSED                     [ 28%]
+tests/test_planner.py::test_regla0_tipo_fuera_de_alcance PASSED          [ 32%]
+tests/test_planner.py::test_regla1_fuera_de_plazo PASSED                 [ 35%]
+tests/test_planner.py::test_regla2_afecta_evaluacion PASSED              [ 39%]
+tests/test_planner.py::test_regla2_prorroga_larga PASSED                 [ 42%]
+tests/test_planner.py::test_prorroga_de_7_dias_no_va_al_docente PASSED   [ 46%]
+tests/test_planner.py::test_regla3_tercera_justificacion PASSED          [ 50%]
+tests/test_planner.py::test_segunda_justificacion_se_aprueba PASSED      [ 53%]
+tests/test_planner.py::test_regla4_sin_respaldo PASSED                   [ 57%]
+tests/test_planner.py::test_regla5_caso_estandar PASSED                  [ 60%]
+tests/test_planner.py::test_prioridad_fuera_de_plazo_gana_a_todo PASSED  [ 64%]
+tests/test_tools.py::test_consultar_solicitud_existente PASSED           [ 67%]
+tests/test_tools.py::test_consultar_solicitud_inexistente PASSED         [ 71%]
+tests/test_tools.py::test_consultar_alumno_trae_historial PASSED         [ 75%]
+tests/test_tools.py::test_validar_plazo_dentro PASSED                    [ 78%]
+tests/test_tools.py::test_validar_plazo_fuera PASSED                     [ 82%]
+tests/test_tools.py::test_validar_plazo_pedida_antes_del_evento PASSED   [ 85%]
+tests/test_tools.py::test_registrar_decision_cambia_estado_y_guarda_memoria PASSED [ 89%]
+tests/test_tools.py::test_registrar_decision_invalida PASSED             [ 92%]
+tests/test_tools.py::test_notificar_alumno PASSED                        [ 96%]
+tests/test_tools.py::test_buscar_reglamento_por_significado PASSED       [100%]
+
+============================== warnings summary ===============================
+tests/test_e2e.py::test_caso_estandar_se_aprueba
+  C:\Users\Jonas\OneDrive\Documents\Universidad\Ingenieria de soluciones con IA\agente-solicitudes-academicas\agent\memory\semantic.py:20: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+    return HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 28 passed, 1 warning in 13.95s ========================

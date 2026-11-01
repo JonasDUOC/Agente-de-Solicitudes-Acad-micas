@@ -1,0 +1,21 @@
+solicitud_id,alumno_id,tipo,asignatura,fecha_evento,fecha_solicitud,dias_solicitados,afecta_evaluacion,tiene_respaldo,descripcion,estado
+SOL-001,ALU-001,justificacion_inasistencia,Base de Datos,2026-10-20,2026-10-22,0,0,1,Estuve con fiebre y adjunto certificado médico.,pendiente
+SOL-002,ALU-002,prorroga_entrega,Programación Back End,2026-10-05,2026-10-14,10,0,0,Necesito más tiempo para terminar el proyecto.,pendiente
+SOL-003,ALU-003,justificacion_inasistencia,Estadística Descriptiva,2026-10-22,2026-10-23,0,1,1,"Falté a la prueba 2 por un trámite médico, adjunto constancia.",pendiente
+SOL-004,ALU-005,prorroga_entrega,Ingeniería de Software,2026-10-28,2026-10-26,10,0,1,"Pido 10 días más porque mi equipo se rompió, adjunto boleta del servicio técnico.",pendiente
+SOL-005,ALU-006,justificacion_inasistencia,Base de Datos,2026-10-23,2026-10-26,0,0,0,Ese día no pude ir por un problema familiar.,pendiente
+SOL-006,ALU-007,prorroga_entrega,Ingeniería de Soluciones con IA,2026-10-30,2026-10-29,3,0,1,"Solicito 3 días de prórroga por licencia médica, adjunto certificado.",pendiente
+SOL-007,ALU-008,retiro_asignatura,Estadística Descriptiva,2026-10-25,2026-10-26,0,0,1,Quiero retirar la asignatura.,pendiente
+SOL-008,ALU-004,justificacion_inasistencia,Programación Back End,2026-09-08,2026-09-09,0,0,1,Adjunto certificado médico por gripe.,pendiente
+SOL-009,ALU-004,justificacion_inasistencia,Base de Datos,2026-09-29,2026-10-01,0,0,1,"Adjunto certificado médico, control dental.",pendiente
+SOL-010,ALU-004,justificacion_inasistencia,Ingeniería de Software,2026-10-27,2026-10-28,0,0,1,"Adjunto certificado médico, nuevamente enfermo.",pendiente
+SOL-011,ALU-009,justificacion_inasistencia,Programación Back End,2026-10-27,2026-10-30,0,1,1,"Problema de transporte, adjunto comprobante.",pendiente
+SOL-012,ALU-012,justificacion_inasistencia,Base de Datos,2026-10-23,2026-10-23,0,0,1,Adjunto certificado médico.,pendiente
+SOL-013,ALU-011,justificacion_inasistencia,Base de Datos,2026-10-06,2026-10-08,0,0,1,Adjunto certificado médico.,pendiente
+SOL-014,ALU-011,justificacion_inasistencia,Ingeniería de Software,2026-09-30,2026-09-28,0,0,0,"Problema de transporte, adjunto comprobante.",pendiente
+SOL-015,ALU-009,prorroga_entrega,Estadística Descriptiva,2026-10-20,2026-10-18,7,0,1,Necesito unos días más por motivos de salud.,pendiente
+SOL-016,ALU-010,justificacion_inasistencia,Ingeniería de Software,2026-08-21,2026-08-18,0,0,0,Adjunto certificado médico.,pendiente
+SOL-017,ALU-010,prorroga_entrega,Ingeniería de Software,2026-09-17,2026-09-21,6,0,1,"Mi computador falló, pido extensión.",pendiente
+SOL-018,ALU-010,justificacion_inasistencia,Base de Datos,2026-09-03,2026-09-08,0,0,1,"Problema de transporte, adjunto comprobante.",pendiente
+SOL-019,ALU-010,justificacion_inasistencia,Programación Back End,2026-09-23,2026-09-20,0,0,1,Adjunto certificado médico.,pendiente
+SOL-020,ALU-010,justificacion_inasistencia,Ingeniería de Soluciones con IA,2026-10-24,2026-10-26,0,0,0,"Tuve un trámite que no podía postergar, adjunto constancia.",pendiente
