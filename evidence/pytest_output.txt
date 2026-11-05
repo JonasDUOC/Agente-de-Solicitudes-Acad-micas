@@ -40,4 +40,4 @@ tests/test_e2e.py::test_caso_estandar_se_aprueba
     return HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================= 28 passed, 1 warning in 13.95s ========================
+======================= 28 passed, 1 warning in 44.67s ========================
