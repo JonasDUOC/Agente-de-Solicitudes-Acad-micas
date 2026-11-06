@@ -57,7 +57,7 @@ Alcance: [docs/alcance.md](docs/alcance.md).
 
 ## Instalación
 
-Requisitos: Python 3.10 o superior, Git y una API key gratuita de Gemini
+Requisitos: Python 3.10 a 3.13 (LangChain 0.3 no es compatible con 3.14), Git y una API key gratuita de Gemini
 (https://aistudio.google.com/apikey).
 
 ```bash

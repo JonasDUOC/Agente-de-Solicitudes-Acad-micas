@@ -11,6 +11,7 @@ import pandas as pd
 import streamlit as st
 
 from agent.core import crear_agente, procesar_solicitud
+import agent.gemini_patch  # noqa: F401  (compatibilidad Gemini 3 + LangChain 0.3)
 from agent.memory.short_term import crear_memoria_corto_plazo
 from config.settings import DB_PATH, NOMBRE_INSTITUCION
 from scripts import seed_data
@@ -150,6 +151,7 @@ with tab_chat:
                 salida = st.session_state.agente.invoke({"input": pregunta})["output"]
             respuesta = texto_de(salida)
         except Exception as e:   # sin API key, sin internet, cuota agotada (429)...
+            import traceback; traceback.print_exc()   # TEMPORAL
             respuesta = (f"⚠️ No pude contactar al modelo ({type(e).__name__}). "
                          "La pestaña 'Procesar solicitud' funciona sin el LLM.")
         st.chat_message("assistant").write(respuesta)
